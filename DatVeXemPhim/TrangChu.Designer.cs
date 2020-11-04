@@ -32,29 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTen = new System.Windows.Forms.Label();
-            this.pcAcc = new System.Windows.Forms.PictureBox();
             this.lblDangKy = new System.Windows.Forms.Label();
             this.lblDangNhap = new System.Windows.Forms.Label();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.MNTrangChu = new System.Windows.Forms.ToolStripMenuItem();
-            this.MNTheLoai = new System.Windows.Forms.ToolStripMenuItem();
-            this.hànhĐộngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kinhDịToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hàiHướcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hoạtHìnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viễnTưởngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tìnhCảmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MNQuocGia = new System.Windows.Forms.ToolStripMenuItem();
-            this.phimMỹToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phimViệtNamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phimHànQuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phimẤnĐộToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phimTrungQuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phimTháiLanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MNCapNhat = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMua4 = new System.Windows.Forms.Button();
             this.btnMua3 = new System.Windows.Forms.Button();
@@ -64,10 +43,6 @@
             this.btnXem3 = new System.Windows.Forms.Button();
             this.btnXem2 = new System.Windows.Forms.Button();
             this.btnXem1 = new System.Windows.Forms.Button();
-            this.pcFiml4 = new System.Windows.Forms.PictureBox();
-            this.pcFiml2 = new System.Windows.Forms.PictureBox();
-            this.pcFiml3 = new System.Windows.Forms.PictureBox();
-            this.pcFiml1 = new System.Windows.Forms.PictureBox();
             this.imageListFiml = new System.Windows.Forms.ImageList(this.components);
             this.imageListKM = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -82,16 +57,15 @@
             this.pcNextFiml = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pcBackFiml = new System.Windows.Forms.PictureBox();
+            this.pcFiml4 = new System.Windows.Forms.PictureBox();
+            this.pcFiml2 = new System.Windows.Forms.PictureBox();
+            this.pcFiml3 = new System.Windows.Forms.PictureBox();
+            this.pcFiml1 = new System.Windows.Forms.PictureBox();
+            this.pcAcc = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).BeginInit();
             this.Label.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcKM4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcKM3)).BeginInit();
@@ -101,25 +75,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcNextFiml)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackFiml)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblTen);
             this.panel1.Controls.Add(this.pcAcc);
             this.panel1.Controls.Add(this.lblDangKy);
             this.panel1.Controls.Add(this.lblDangNhap);
-            this.panel1.Controls.Add(this.txtTimKiem);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(760, 84);
+            this.panel1.Size = new System.Drawing.Size(764, 84);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -129,7 +108,7 @@
             this.lblTen.AutoSize = true;
             this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTen.Location = new System.Drawing.Point(649, 33);
+            this.lblTen.Location = new System.Drawing.Point(653, 33);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(41, 13);
             this.lblTen.TabIndex = 6;
@@ -137,25 +116,13 @@
             this.lblTen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblTen.Visible = false;
             // 
-            // pcAcc
-            // 
-            this.pcAcc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcAcc.Image = global::DatVeXemPhim.Properties.Resources.iconAcc1;
-            this.pcAcc.Location = new System.Drawing.Point(728, 5);
-            this.pcAcc.Name = "pcAcc";
-            this.pcAcc.Size = new System.Drawing.Size(24, 24);
-            this.pcAcc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pcAcc.TabIndex = 5;
-            this.pcAcc.TabStop = false;
-            this.pcAcc.Click += new System.EventHandler(this.pcAcc_Click);
-            // 
             // lblDangKy
             // 
             this.lblDangKy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDangKy.AutoSize = true;
             this.lblDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDangKy.Location = new System.Drawing.Point(700, 33);
+            this.lblDangKy.Location = new System.Drawing.Point(704, 33);
             this.lblDangKy.Name = "lblDangKy";
             this.lblDangKy.Size = new System.Drawing.Size(55, 13);
             this.lblDangKy.TabIndex = 3;
@@ -168,167 +135,12 @@
             this.lblDangNhap.AutoSize = true;
             this.lblDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDangNhap.Location = new System.Drawing.Point(632, 33);
+            this.lblDangNhap.Location = new System.Drawing.Point(636, 33);
             this.lblDangNhap.Name = "lblDangNhap";
             this.lblDangNhap.Size = new System.Drawing.Size(71, 13);
             this.lblDangNhap.TabIndex = 3;
             this.lblDangNhap.Text = "Đăng Nhập";
             this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.Location = new System.Drawing.Point(459, 30);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(167, 20);
-            this.txtTimKiem.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::DatVeXemPhim.Properties.Resources.search24;
-            this.pictureBox2.Location = new System.Drawing.Point(432, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::DatVeXemPhim.Properties.Resources.LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MNTrangChu,
-            this.MNTheLoai,
-            this.MNQuocGia,
-            this.MNCapNhat});
-            this.menuStrip1.Location = new System.Drawing.Point(103, 55);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(338, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // MNTrangChu
-            // 
-            this.MNTrangChu.Name = "MNTrangChu";
-            this.MNTrangChu.Size = new System.Drawing.Size(74, 20);
-            this.MNTrangChu.Text = "Trang Chủ";
-            this.MNTrangChu.Click += new System.EventHandler(this.MNTrangChu_Click);
-            // 
-            // MNTheLoai
-            // 
-            this.MNTheLoai.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hànhĐộngToolStripMenuItem,
-            this.kinhDịToolStripMenuItem,
-            this.hàiHướcToolStripMenuItem,
-            this.hoạtHìnhToolStripMenuItem,
-            this.viễnTưởngToolStripMenuItem,
-            this.tìnhCảmToolStripMenuItem});
-            this.MNTheLoai.Name = "MNTheLoai";
-            this.MNTheLoai.Size = new System.Drawing.Size(64, 20);
-            this.MNTheLoai.Text = "Thể Loại";
-            // 
-            // hànhĐộngToolStripMenuItem
-            // 
-            this.hànhĐộngToolStripMenuItem.Name = "hànhĐộngToolStripMenuItem";
-            this.hànhĐộngToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.hànhĐộngToolStripMenuItem.Text = "Hành Động";
-            // 
-            // kinhDịToolStripMenuItem
-            // 
-            this.kinhDịToolStripMenuItem.Name = "kinhDịToolStripMenuItem";
-            this.kinhDịToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.kinhDịToolStripMenuItem.Text = "Kinh Dị";
-            // 
-            // hàiHướcToolStripMenuItem
-            // 
-            this.hàiHướcToolStripMenuItem.Name = "hàiHướcToolStripMenuItem";
-            this.hàiHướcToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.hàiHướcToolStripMenuItem.Text = "Hài Hước";
-            // 
-            // hoạtHìnhToolStripMenuItem
-            // 
-            this.hoạtHìnhToolStripMenuItem.Name = "hoạtHìnhToolStripMenuItem";
-            this.hoạtHìnhToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.hoạtHìnhToolStripMenuItem.Text = "Hoạt Hình";
-            // 
-            // viễnTưởngToolStripMenuItem
-            // 
-            this.viễnTưởngToolStripMenuItem.Name = "viễnTưởngToolStripMenuItem";
-            this.viễnTưởngToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.viễnTưởngToolStripMenuItem.Text = "Viễn Tưởng";
-            // 
-            // tìnhCảmToolStripMenuItem
-            // 
-            this.tìnhCảmToolStripMenuItem.Name = "tìnhCảmToolStripMenuItem";
-            this.tìnhCảmToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.tìnhCảmToolStripMenuItem.Text = "Tình Cảm";
-            // 
-            // MNQuocGia
-            // 
-            this.MNQuocGia.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.phimMỹToolStripMenuItem,
-            this.phimViệtNamToolStripMenuItem,
-            this.phimHànQuốcToolStripMenuItem,
-            this.phimẤnĐộToolStripMenuItem,
-            this.phimTrungQuốcToolStripMenuItem,
-            this.phimTháiLanToolStripMenuItem});
-            this.MNQuocGia.Name = "MNQuocGia";
-            this.MNQuocGia.Size = new System.Drawing.Size(68, 20);
-            this.MNQuocGia.Text = "Quốc Gia";
-            // 
-            // phimMỹToolStripMenuItem
-            // 
-            this.phimMỹToolStripMenuItem.Name = "phimMỹToolStripMenuItem";
-            this.phimMỹToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.phimMỹToolStripMenuItem.Text = "Phim Mỹ";
-            // 
-            // phimViệtNamToolStripMenuItem
-            // 
-            this.phimViệtNamToolStripMenuItem.Name = "phimViệtNamToolStripMenuItem";
-            this.phimViệtNamToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.phimViệtNamToolStripMenuItem.Text = "Phim Việt Nam";
-            // 
-            // phimHànQuốcToolStripMenuItem
-            // 
-            this.phimHànQuốcToolStripMenuItem.Name = "phimHànQuốcToolStripMenuItem";
-            this.phimHànQuốcToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.phimHànQuốcToolStripMenuItem.Text = "Phim Hàn Quốc";
-            // 
-            // phimẤnĐộToolStripMenuItem
-            // 
-            this.phimẤnĐộToolStripMenuItem.Name = "phimẤnĐộToolStripMenuItem";
-            this.phimẤnĐộToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.phimẤnĐộToolStripMenuItem.Text = "Phim Ấn Độ";
-            // 
-            // phimTrungQuốcToolStripMenuItem
-            // 
-            this.phimTrungQuốcToolStripMenuItem.Name = "phimTrungQuốcToolStripMenuItem";
-            this.phimTrungQuốcToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.phimTrungQuốcToolStripMenuItem.Text = "Phim Trung Quốc";
-            // 
-            // phimTháiLanToolStripMenuItem
-            // 
-            this.phimTháiLanToolStripMenuItem.Name = "phimTháiLanToolStripMenuItem";
-            this.phimTháiLanToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.phimTháiLanToolStripMenuItem.Text = "Phim Thái Lan";
-            // 
-            // MNCapNhat
-            // 
-            this.MNCapNhat.Name = "MNCapNhat";
-            this.MNCapNhat.Size = new System.Drawing.Size(124, 20);
-            this.MNCapNhat.Text = "Phim Mới Cập Nhật";
             // 
             // panel2
             // 
@@ -433,38 +245,6 @@
             this.btnXem1.Text = "Xem Chi Tiết";
             this.btnXem1.UseVisualStyleBackColor = true;
             // 
-            // pcFiml4
-            // 
-            this.pcFiml4.Location = new System.Drawing.Point(477, 0);
-            this.pcFiml4.Name = "pcFiml4";
-            this.pcFiml4.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml4.TabIndex = 2;
-            this.pcFiml4.TabStop = false;
-            // 
-            // pcFiml2
-            // 
-            this.pcFiml2.Location = new System.Drawing.Point(159, 0);
-            this.pcFiml2.Name = "pcFiml2";
-            this.pcFiml2.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml2.TabIndex = 2;
-            this.pcFiml2.TabStop = false;
-            // 
-            // pcFiml3
-            // 
-            this.pcFiml3.Location = new System.Drawing.Point(318, 0);
-            this.pcFiml3.Name = "pcFiml3";
-            this.pcFiml3.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml3.TabIndex = 2;
-            this.pcFiml3.TabStop = false;
-            // 
-            // pcFiml1
-            // 
-            this.pcFiml1.Location = new System.Drawing.Point(0, 0);
-            this.pcFiml1.Name = "pcFiml1";
-            this.pcFiml1.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml1.TabIndex = 2;
-            this.pcFiml1.TabStop = false;
-            // 
             // imageListFiml
             // 
             this.imageListFiml.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListFiml.ImageStream")));
@@ -478,6 +258,10 @@
             this.imageListFiml.Images.SetKeyName(6, "anh7.jpg");
             this.imageListFiml.Images.SetKeyName(7, "anh8.jpg");
             this.imageListFiml.Images.SetKeyName(8, "anh9.jpg");
+            this.imageListFiml.Images.SetKeyName(9, "anh10.jpg");
+            this.imageListFiml.Images.SetKeyName(10, "anh11.jpg");
+            this.imageListFiml.Images.SetKeyName(11, "anh12.jpg");
+            this.imageListFiml.Images.SetKeyName(12, "anh13.jpg");
             // 
             // imageListKM
             // 
@@ -618,14 +402,82 @@
             this.pcBackFiml.TabStop = false;
             this.pcBackFiml.Click += new System.EventHandler(this.pcBackFiml_Click);
             // 
+            // pcFiml4
+            // 
+            this.pcFiml4.Location = new System.Drawing.Point(477, 0);
+            this.pcFiml4.Name = "pcFiml4";
+            this.pcFiml4.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml4.TabIndex = 2;
+            this.pcFiml4.TabStop = false;
+            // 
+            // pcFiml2
+            // 
+            this.pcFiml2.Location = new System.Drawing.Point(159, 0);
+            this.pcFiml2.Name = "pcFiml2";
+            this.pcFiml2.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml2.TabIndex = 2;
+            this.pcFiml2.TabStop = false;
+            // 
+            // pcFiml3
+            // 
+            this.pcFiml3.Location = new System.Drawing.Point(318, 0);
+            this.pcFiml3.Name = "pcFiml3";
+            this.pcFiml3.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml3.TabIndex = 2;
+            this.pcFiml3.TabStop = false;
+            // 
+            // pcFiml1
+            // 
+            this.pcFiml1.Location = new System.Drawing.Point(0, 0);
+            this.pcFiml1.Name = "pcFiml1";
+            this.pcFiml1.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml1.TabIndex = 2;
+            this.pcFiml1.TabStop = false;
+            // 
+            // pcAcc
+            // 
+            this.pcAcc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcAcc.Image = global::DatVeXemPhim.Properties.Resources.iconAcc1;
+            this.pcAcc.Location = new System.Drawing.Point(732, 5);
+            this.pcAcc.Name = "pcAcc";
+            this.pcAcc.Size = new System.Drawing.Size(24, 24);
+            this.pcAcc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pcAcc.TabIndex = 5;
+            this.pcAcc.TabStop = false;
+            this.pcAcc.Click += new System.EventHandler(this.pcAcc_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::DatVeXemPhim.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(135, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(482, 31);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "WELCOME TO THE CV CENIMERA";
+            // 
             // TrangChu
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(777, 667);
+            this.ClientSize = new System.Drawing.Size(781, 667);
             this.Controls.Add(this.Label);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -636,26 +488,15 @@
             this.Controls.Add(this.pcBackFiml);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
             this.Name = "TrangChu";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChu";
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).EndInit();
             this.Label.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcKM4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcKM3)).EndInit();
@@ -665,6 +506,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcNextFiml)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackFiml)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -672,8 +519,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pcFiml1;
@@ -694,23 +539,6 @@
         private System.Windows.Forms.PictureBox pcKM3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem MNTrangChu;
-        private System.Windows.Forms.ToolStripMenuItem MNTheLoai;
-        private System.Windows.Forms.ToolStripMenuItem hànhĐộngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kinhDịToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hàiHướcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hoạtHìnhToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viễnTưởngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tìnhCảmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem MNQuocGia;
-        private System.Windows.Forms.ToolStripMenuItem phimMỹToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phimViệtNamToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phimHànQuốcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phimẤnĐộToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phimTrungQuốcToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phimTháiLanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem MNCapNhat;
         private System.Windows.Forms.Button btnMua4;
         private System.Windows.Forms.Button btnMua3;
         private System.Windows.Forms.Button btnMua2;
@@ -723,5 +551,6 @@
         public System.Windows.Forms.Label lblDangNhap;
         public System.Windows.Forms.PictureBox pcAcc;
         public System.Windows.Forms.Label lblTen;
+        private System.Windows.Forms.Label label4;
     }
 }

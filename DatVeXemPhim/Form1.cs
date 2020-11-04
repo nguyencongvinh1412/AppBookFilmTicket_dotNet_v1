@@ -98,6 +98,7 @@ namespace DatVeXemPhim
             QuenMK quenmk = new QuenMK();
             quenmk.ShowDialog();
             this.Visible = true;
+            this.Close();
         }
 
         

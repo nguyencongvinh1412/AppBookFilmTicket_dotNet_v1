@@ -65,7 +65,6 @@ namespace DatVeXemPhim
             pcKM4.Image = imageListKM.Images[3];
             KMLeft = 0; KMRight = 3;
 
-            txtTimKiem.Focus();
             pcAcc.Visible = false;
             if(ClassLogin.Ten != "")
             {
@@ -91,7 +90,7 @@ namespace DatVeXemPhim
 
         private void pcNextFiml_Click(object sender, EventArgs e)
         {
-            if(FimlRight < 8)
+            if(FimlRight < 12)
             {
                 FimlRight++;
                 FimlLeft++;
@@ -161,24 +160,6 @@ namespace DatVeXemPhim
                 pcAcc.Visible = false;
                 lblTen.Visible = false;
             }
-        }
-
-        private void MNTrangChu_Click(object sender, EventArgs e)
-        {
-            pcFiml1.Image = imageListFiml.Images[0];
-            pcFiml2.Image = imageListFiml.Images[1];
-            pcFiml3.Image = imageListFiml.Images[2];
-            pcFiml4.Image = imageListFiml.Images[3];
-            FimlLeft = 0; FimlRight = 3;
-
-            pcKM1.Image = imageListKM.Images[0];
-            pcKM2.Image = imageListKM.Images[1];
-            pcKM3.Image = imageListKM.Images[2];
-            pcKM4.Image = imageListKM.Images[3];
-            KMLeft = 0; KMRight = 3;
-
-            txtTimKiem.Focus();
-            pcAcc.Visible = false;
         }
 
         private void btnMua1_Click(object sender, EventArgs e)
@@ -255,6 +236,11 @@ namespace DatVeXemPhim
                     datve.ShowDialog();
                     this.Visible = true;
                 }
+        }
+
+        private void indonesiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void pcFiml3_MouseMove(object sender, MouseEventArgs e)

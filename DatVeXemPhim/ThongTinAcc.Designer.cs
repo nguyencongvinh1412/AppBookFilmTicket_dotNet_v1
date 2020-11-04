@@ -34,6 +34,7 @@
             this.txtLichSuTruyCap = new System.Windows.Forms.TextBox();
             this.txtTenAcc = new System.Windows.Forms.TextBox();
             this.dgvTTA = new System.Windows.Forms.DataGridView();
+            this.btnDoiMK = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.slcThongTinAcc)).BeginInit();
             this.slcThongTinAcc.Panel1.SuspendLayout();
             this.slcThongTinAcc.Panel2.SuspendLayout();
@@ -49,6 +50,7 @@
             // 
             // slcThongTinAcc.Panel1
             // 
+            this.slcThongTinAcc.Panel1.Controls.Add(this.btnDoiMK);
             this.slcThongTinAcc.Panel1.Controls.Add(this.btnDangXuat);
             this.slcThongTinAcc.Panel1.Controls.Add(this.label1);
             this.slcThongTinAcc.Panel1.Controls.Add(this.txtLichSuTruyCap);
@@ -108,6 +110,17 @@
             this.dgvTTA.TabIndex = 0;
             this.dgvTTA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTTA_CellContentClick);
             // 
+            // btnDoiMK
+            // 
+            this.btnDoiMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDoiMK.Location = new System.Drawing.Point(167, 74);
+            this.btnDoiMK.Name = "btnDoiMK";
+            this.btnDoiMK.Size = new System.Drawing.Size(75, 23);
+            this.btnDoiMK.TabIndex = 3;
+            this.btnDoiMK.Text = "Đổi MK";
+            this.btnDoiMK.UseVisualStyleBackColor = false;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
+            // 
             // ThongTinAcc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,5 +150,6 @@
         private System.Windows.Forms.DataGridView dgvTTA;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Button btnDoiMK;
     }
 }

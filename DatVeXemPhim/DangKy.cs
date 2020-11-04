@@ -22,12 +22,12 @@ namespace DatVeXemPhim
         {
             if(txtUserName.Text.Trim() != "" && txtPassword.Text.Trim() != "")
             {
-                SqlParameter ten = new SqlParameter("@ten",SqlDbType.NVarChar);
-                SqlParameter mk = new SqlParameter("@mk",SqlDbType.NVarChar);
+                SqlParameter ten = new SqlParameter("@name",SqlDbType.NVarChar);
+                SqlParameter mk = new SqlParameter("@pass",SqlDbType.NVarChar);
                 try
                 {
                     SQL.getConnection();
-                    string sql = "select count(*) from DangNhap where Ten = @ten";
+                    string sql = "select count(*) from DangNhap where Ten = @name";
                     SQL.cmd.CommandText = sql;
                     ten.Value = txtUserName.Text;
                     SQL.cmd.Parameters.Add(ten);
@@ -38,8 +38,10 @@ namespace DatVeXemPhim
                     }    
                     else
                     {
-                        sql = "insert into DangNhap (Ten, MK) values(@ten , @mk)";
+                        sql = "addDangNhap";
                         SQL.cmd.CommandText = sql;
+                        SQL.cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
                         ten.Value = txtUserName.Text;
                         mk.Value = txtPassword.Text;
                         SQL.cmd.Parameters.Add(mk);

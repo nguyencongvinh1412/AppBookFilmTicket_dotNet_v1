@@ -13,7 +13,7 @@ namespace DatVeXemPhim
         public static SqlCommand cmd;
         public static void  getConnection()
         {
-            string strConnection = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=SQL_ChiaNhom;Integrated Security=True";
+            string strConnection = @"Data Source=ADMIN\SQLEXPRESS;Initial Catalog=SQL_MyApp_BookTicket;Integrated Security=True";
             con = new SqlConnection(strConnection);
             con.Open();
             cmd = con.CreateCommand();

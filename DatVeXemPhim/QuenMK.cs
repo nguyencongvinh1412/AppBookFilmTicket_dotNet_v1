@@ -33,7 +33,7 @@ namespace DatVeXemPhim
                 try
                 {
                     SQL.getConnection();
-
+                    // kiem tra tai khoan co ton tai hay khong
                     string sql = "select count(*) from DangNhap where Ten = @ten";
                     SQL.cmd.CommandText = sql;
                     ten.Value = txtEmail.Text;
@@ -81,8 +81,8 @@ namespace DatVeXemPhim
                 }    
                 try
                 {
-                    SqlParameter mk = new SqlParameter("@mk", SqlDbType.NVarChar);
-                    SqlParameter ten = new SqlParameter("@ten", SqlDbType.NVarChar);
+                    SqlParameter mk = new SqlParameter("@newpass", SqlDbType.NVarChar);
+                    SqlParameter ten = new SqlParameter("@name", SqlDbType.NVarChar);
                     SQL.getConnection();
 
                     Random rd = new Random();
@@ -91,8 +91,11 @@ namespace DatVeXemPhim
                     DialogResult ret = MessageBox.Show(mes, "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     if(ret == DialogResult.Yes)
                     {
-                        string sql = "update DangNhap set MK = @mk where Ten = @ten";
+                        //string sql = "update DangNhap set MK = @mk where Ten = @ten";
+                        string sql = "resetPassDangNhap";
                         SQL.cmd.CommandText = sql;
+                        SQL.cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
                         ten.Value = txtEmail.Text;
                         mk.Value = MK;
                         SQL.cmd.Parameters.Add(ten);
@@ -109,9 +112,6 @@ namespace DatVeXemPhim
                         }    
                         else
                         {
-                            this.Visible = false;
-                            DatVe datve = new DatVe();
-                            datve.ShowDialog();
                             this.Close();
                         }       
                     }    

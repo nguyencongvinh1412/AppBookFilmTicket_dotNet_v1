@@ -62,5 +62,13 @@ namespace DatVeXemPhim
         {
 
         }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            DoiMK doiMK = new DoiMK();
+            doiMK.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

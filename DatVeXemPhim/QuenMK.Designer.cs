@@ -32,18 +32,18 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCancelQuenMK = new System.Windows.Forms.Button();
             this.btnOKQuenMK = new System.Windows.Forms.Button();
-            this.picReLoad = new System.Windows.Forms.PictureBox();
             this.txtNhapCodeQuenMK = new System.Windows.Forms.TextBox();
             this.txtCodeQuenMK = new System.Windows.Forms.TextBox();
             this.btnLayMaDN = new System.Windows.Forms.Button();
             this.txtMaDN = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.picReLoad = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picReLoad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -84,17 +84,6 @@
             this.btnOKQuenMK.Text = "OK";
             this.btnOKQuenMK.UseVisualStyleBackColor = false;
             this.btnOKQuenMK.Click += new System.EventHandler(this.btnOKQuenMK_Click);
-            // 
-            // picReLoad
-            // 
-            this.picReLoad.Image = global::DatVeXemPhim.Properties.Resources.reload;
-            this.picReLoad.Location = new System.Drawing.Point(287, 91);
-            this.picReLoad.Name = "picReLoad";
-            this.picReLoad.Size = new System.Drawing.Size(24, 24);
-            this.picReLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picReLoad.TabIndex = 3;
-            this.picReLoad.TabStop = false;
-            this.picReLoad.Click += new System.EventHandler(this.picReLoad_Click);
             // 
             // txtNhapCodeQuenMK
             // 
@@ -138,7 +127,21 @@
             this.txtEmail.Size = new System.Drawing.Size(198, 20);
             this.txtEmail.TabIndex = 0;
             this.txtEmail.Text = "UserName/SDT..............";
-            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // picReLoad
+            // 
+            this.picReLoad.Image = global::DatVeXemPhim.Properties.Resources.reload;
+            this.picReLoad.Location = new System.Drawing.Point(287, 91);
+            this.picReLoad.Name = "picReLoad";
+            this.picReLoad.Size = new System.Drawing.Size(24, 24);
+            this.picReLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picReLoad.TabIndex = 3;
+            this.picReLoad.TabStop = false;
+            this.picReLoad.Click += new System.EventHandler(this.picReLoad_Click);
             // 
             // pictureBox1
             // 
@@ -149,10 +152,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // QuenMK
             // 
@@ -169,9 +168,9 @@
             this.Load += new System.EventHandler(this.QuenMK_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picReLoad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }

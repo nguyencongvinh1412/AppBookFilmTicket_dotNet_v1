@@ -62,11 +62,11 @@ namespace DatVeXemPhim
             try
             {
                 SQL.getConnection();
-                SQL.cmd.CommandText = "CapNhatMauGhe";
+                SQL.cmd.CommandText = "resetData";
                 SQL.cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter sqlmafim = new SqlParameter("@mafim", SqlDbType.Int);
-                sqlmafim.Value = ClassLogin.MaFiml;
-                SQL.cmd.Parameters.Add(sqlmafim);
+                //SqlParameter sqlmafim = new SqlParameter("@mafim", SqlDbType.Int);
+                //sqlmafim.Value = ClassLogin.MaFiml;
+                //SQL.cmd.Parameters.Add(sqlmafim);
  
                 SQL.cmd.ExecuteNonQuery();
                 SQL.closeConnection();
