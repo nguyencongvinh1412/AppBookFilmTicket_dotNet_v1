@@ -128,17 +128,18 @@ B6 : đóng con trỏ và hủy vùng nhớ cấp phát cho con trỏ
 create proc resetData
 as
 begin
-	declare cursorTimeFiml cursor for(select Fiml.MaFiml from Fiml) 
+	declare cursorTimeFiml cursor for(select Ghe.MaFiml from Ghe) 
 	Open cursorTimeFiml
 	declare @maxTime int
 	declare @maFiml int
 	fetch next from cursorTimeFiml into @maFiml
 	while @@FETCH_STATUS = 0 
 	begin
-		select @maxTime = max(DATEPART(DAY,GETDATE()) - DATEPART(DAY,TG)) from Fiml where MaFiml = @maFiml;
-		if @maxTime > 2 delete Fiml where MaFiml = @maFiml;
+		select @maxTime = max(DATEPART(DAY,GETDATE()) - DATEPART(DAY,TG)) from Ghe where MaFiml = @maFiml;
+		if @maxTime > 2 delete Ghe where MaFiml = @maFiml;
 		fetch next from cursorTimeFiml into @maFiml
 	end
 	close cursorTimeFiml
 	deallocate cursorTimeFiml
 end
+select * from Fiml

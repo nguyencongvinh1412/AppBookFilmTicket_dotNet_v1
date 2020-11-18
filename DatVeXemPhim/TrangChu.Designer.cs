@@ -31,9 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblTen = new System.Windows.Forms.Label();
+            this.pcAcc = new System.Windows.Forms.PictureBox();
             this.lblDangKy = new System.Windows.Forms.Label();
             this.lblDangNhap = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMua4 = new System.Windows.Forms.Button();
             this.btnMua3 = new System.Windows.Forms.Button();
@@ -43,6 +46,10 @@
             this.btnXem3 = new System.Windows.Forms.Button();
             this.btnXem2 = new System.Windows.Forms.Button();
             this.btnXem1 = new System.Windows.Forms.Button();
+            this.pcFiml4 = new System.Windows.Forms.PictureBox();
+            this.pcFiml2 = new System.Windows.Forms.PictureBox();
+            this.pcFiml3 = new System.Windows.Forms.PictureBox();
+            this.pcFiml1 = new System.Windows.Forms.PictureBox();
             this.imageListFiml = new System.Windows.Forms.ImageList(this.components);
             this.imageListKM = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
@@ -57,15 +64,14 @@
             this.pcNextFiml = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pcBackFiml = new System.Windows.Forms.PictureBox();
-            this.pcFiml4 = new System.Windows.Forms.PictureBox();
-            this.pcFiml2 = new System.Windows.Forms.PictureBox();
-            this.pcFiml3 = new System.Windows.Forms.PictureBox();
-            this.pcFiml1 = new System.Windows.Forms.PictureBox();
-            this.pcAcc = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).BeginInit();
             this.Label.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcKM4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcKM3)).BeginInit();
@@ -75,12 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcNextFiml)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackFiml)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,12 +95,23 @@
             this.panel1.Controls.Add(this.lblDangNhap);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(764, 84);
+            this.panel1.Size = new System.Drawing.Size(768, 84);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(135, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(482, 31);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "WELCOME TO THE CV CENIMERA";
             // 
             // lblTen
             // 
@@ -108,7 +119,7 @@
             this.lblTen.AutoSize = true;
             this.lblTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblTen.Location = new System.Drawing.Point(653, 33);
+            this.lblTen.Location = new System.Drawing.Point(663, 33);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(41, 13);
             this.lblTen.TabIndex = 6;
@@ -116,13 +127,25 @@
             this.lblTen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblTen.Visible = false;
             // 
+            // pcAcc
+            // 
+            this.pcAcc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pcAcc.Image = global::DatVeXemPhim.Properties.Resources.iconAcc1;
+            this.pcAcc.Location = new System.Drawing.Point(742, 5);
+            this.pcAcc.Name = "pcAcc";
+            this.pcAcc.Size = new System.Drawing.Size(24, 24);
+            this.pcAcc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pcAcc.TabIndex = 5;
+            this.pcAcc.TabStop = false;
+            this.pcAcc.Click += new System.EventHandler(this.pcAcc_Click);
+            // 
             // lblDangKy
             // 
             this.lblDangKy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDangKy.AutoSize = true;
             this.lblDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDangKy.Location = new System.Drawing.Point(704, 33);
+            this.lblDangKy.Location = new System.Drawing.Point(714, 33);
             this.lblDangKy.Name = "lblDangKy";
             this.lblDangKy.Size = new System.Drawing.Size(55, 13);
             this.lblDangKy.TabIndex = 3;
@@ -135,12 +158,23 @@
             this.lblDangNhap.AutoSize = true;
             this.lblDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDangNhap.Location = new System.Drawing.Point(636, 33);
+            this.lblDangNhap.Location = new System.Drawing.Point(646, 33);
             this.lblDangNhap.Name = "lblDangNhap";
             this.lblDangNhap.Size = new System.Drawing.Size(71, 13);
             this.lblDangNhap.TabIndex = 3;
             this.lblDangNhap.Text = "Đăng Nhập";
             this.lblDangNhap.Click += new System.EventHandler(this.lblDangNhap_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::DatVeXemPhim.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -245,6 +279,39 @@
             this.btnXem1.Text = "Xem Chi Tiết";
             this.btnXem1.UseVisualStyleBackColor = true;
             // 
+            // pcFiml4
+            // 
+            this.pcFiml4.Location = new System.Drawing.Point(477, 0);
+            this.pcFiml4.Name = "pcFiml4";
+            this.pcFiml4.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pcFiml4.TabIndex = 2;
+            this.pcFiml4.TabStop = false;
+            // 
+            // pcFiml2
+            // 
+            this.pcFiml2.Location = new System.Drawing.Point(159, 0);
+            this.pcFiml2.Name = "pcFiml2";
+            this.pcFiml2.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml2.TabIndex = 2;
+            this.pcFiml2.TabStop = false;
+            // 
+            // pcFiml3
+            // 
+            this.pcFiml3.Location = new System.Drawing.Point(318, 0);
+            this.pcFiml3.Name = "pcFiml3";
+            this.pcFiml3.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml3.TabIndex = 2;
+            this.pcFiml3.TabStop = false;
+            // 
+            // pcFiml1
+            // 
+            this.pcFiml1.Location = new System.Drawing.Point(0, 0);
+            this.pcFiml1.Name = "pcFiml1";
+            this.pcFiml1.Size = new System.Drawing.Size(153, 228);
+            this.pcFiml1.TabIndex = 2;
+            this.pcFiml1.TabStop = false;
+            // 
             // imageListFiml
             // 
             this.imageListFiml.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListFiml.ImageStream")));
@@ -278,12 +345,13 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(65, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(629, 52);
             this.label1.TabIndex = 7;
-            this.label1.Text = "========================MOVIE SELECTION========================";
+            this.label1.Text = "MOVIE SELECTION";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -299,12 +367,13 @@
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(65, 435);
+            this.label3.Location = new System.Drawing.Point(65, 428);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(629, 52);
+            this.label3.Size = new System.Drawing.Size(629, 66);
             this.label3.TabIndex = 7;
-            this.label3.Text = "========================EVENT========================";
+            this.label3.Text = "EVENT";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label
@@ -402,73 +471,6 @@
             this.pcBackFiml.TabStop = false;
             this.pcBackFiml.Click += new System.EventHandler(this.pcBackFiml_Click);
             // 
-            // pcFiml4
-            // 
-            this.pcFiml4.Location = new System.Drawing.Point(477, 0);
-            this.pcFiml4.Name = "pcFiml4";
-            this.pcFiml4.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml4.TabIndex = 2;
-            this.pcFiml4.TabStop = false;
-            // 
-            // pcFiml2
-            // 
-            this.pcFiml2.Location = new System.Drawing.Point(159, 0);
-            this.pcFiml2.Name = "pcFiml2";
-            this.pcFiml2.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml2.TabIndex = 2;
-            this.pcFiml2.TabStop = false;
-            // 
-            // pcFiml3
-            // 
-            this.pcFiml3.Location = new System.Drawing.Point(318, 0);
-            this.pcFiml3.Name = "pcFiml3";
-            this.pcFiml3.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml3.TabIndex = 2;
-            this.pcFiml3.TabStop = false;
-            // 
-            // pcFiml1
-            // 
-            this.pcFiml1.Location = new System.Drawing.Point(0, 0);
-            this.pcFiml1.Name = "pcFiml1";
-            this.pcFiml1.Size = new System.Drawing.Size(153, 228);
-            this.pcFiml1.TabIndex = 2;
-            this.pcFiml1.TabStop = false;
-            // 
-            // pcAcc
-            // 
-            this.pcAcc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pcAcc.Image = global::DatVeXemPhim.Properties.Resources.iconAcc1;
-            this.pcAcc.Location = new System.Drawing.Point(732, 5);
-            this.pcAcc.Name = "pcAcc";
-            this.pcAcc.Size = new System.Drawing.Size(24, 24);
-            this.pcAcc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pcAcc.TabIndex = 5;
-            this.pcAcc.TabStop = false;
-            this.pcAcc.Click += new System.EventHandler(this.pcAcc_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::DatVeXemPhim.Properties.Resources.LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(135, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(482, 31);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "WELCOME TO THE CV CENIMERA";
-            // 
             // TrangChu
             // 
             this.AllowDrop = true;
@@ -477,7 +479,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(781, 667);
+            this.ClientSize = new System.Drawing.Size(785, 461);
             this.Controls.Add(this.Label);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -488,15 +490,22 @@
             this.Controls.Add(this.pcBackFiml);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TrangChu";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "TrangChu";
             this.Load += new System.EventHandler(this.TrangChu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).EndInit();
             this.Label.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcKM4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcKM3)).EndInit();
@@ -506,12 +515,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcNextFiml)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcBackFiml)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcFiml1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcAcc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
